@@ -90,8 +90,6 @@ module.exports = {
             return message.reply({ embeds: [embeds[15]] })
           if (cat == "😳 Anime-Emotions")
             return message.reply({ embeds: [embeds[16]] })
-          if (cat == "🔞 NSFW")
-            return message.reply({ embeds: [embeds[17]] })
           if (category.toLowerCase().includes("custom")) {
             const cmd = client.commands.get(items[0].split("`").join("").toLowerCase()) || client.commands.get(client.aliases.get(items[0].split("`").join("").toLowerCase()));
             try {
@@ -230,12 +228,6 @@ module.exports = {
             description: "Commands to show your Emotions with Anime style"
           },
           {
-            label: "Nsfw",
-            value: "Nsfw",
-            emoji: "🔞",
-            description: "Commands for Nsfw (underage) Content."
-          },
-          {
             label: "Customcommand",
             value: "Customcommand",
             emoji: "🦾",
@@ -284,8 +276,8 @@ but you can also do \`${prefix}setup-SYSTEM\` e.g. \`${prefix}setup-welcome\``)
 :file_folder: on **${client.guilds.cache.size} Guilds**
 ⌚️ **${duration(client.uptime).map(i => `\`${i}\``).join("︲")} Uptime**
 📶 **\`${Math.floor(client.ws.ping)}ms\` Ping**
-<:MilratoDevelopment:900389724936609842>  Made by [**Milrato Development**](https://discord.gg/milrato)`)
-          .addField("How to get help?", `>>> **\` 1. Way \`** *Use the Buttons, to swap the Pages*\n**\` 2. Way \`** *Use the Menu to select all Help Pages, you want to display*\n**\` 3. Way \`** *Watch the Youtube Tutorial*`)
+:DH_OP:  Made by [**D&H GAMING**](https://discord.gg/tP9Tty4g)`)
+          .addField("How to get help?", `>>> **\` 1. Way \`** *Use the Buttons, to swap the Pages*\n**\` 2. Way \`** *Use the Menu to select all Help Pages, you want to display*\n**\` 3. Way \`** *Send Req to [MY OWNER](https://discord.com/users/919144027230699578)*`)
 
         let err = false;
         //Send message with buttons
@@ -368,7 +360,6 @@ but you can also do \`${prefix}setup-SYSTEM\` e.g. \`${prefix}setup-welcome\``)
                   case "fun": index = 15; break;
                   case "minigames": index = 16; break;
                   case "anime-emotions": index = 17; break;
-                  case "nsfw": index = 18; break;
                   case "customcommand": index = 19; break;
                 }
                 vembeds.push(theembeds[index])
