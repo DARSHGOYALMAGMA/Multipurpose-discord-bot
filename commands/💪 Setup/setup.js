@@ -81,11 +81,6 @@ module.exports = {
               emoji: "862749865460498524"
             },
             {
-              value: "setup-autonsfw",
-              description: `Define a Channel to post NSFW every Minute`,
-              emoji: "🔞"
-            },
-            {
               value: "setup-blacklist",
               description: `Manage the Word(s)-Blacklist`,
               emoji: "🔠"
